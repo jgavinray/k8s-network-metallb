@@ -1,0 +1,11 @@
+apiVersion: v2
+name: loadbalancer
+description: A Helm chart for Deploying MetalLB for my environment
+type: application
+version: 0.0.1
+sources:
+  - https://github.com/jgavinray/k8s-network-metallb
+dependencies:
+  - name: metallb
+    repository: https://charts.bitnami.com/bitnami
+    version: 2.4.5
